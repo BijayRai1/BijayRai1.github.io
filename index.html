@@ -4,35 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bijay's Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/superslides.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <nav class="nav">
-      <ul class="menu">
-        <li class="menu_item">About Me</li>
-        <li class="menu_item">Contact</li>
-        <li class="menu_item">Portfolio</li>
-      </ul>
-      <div class="bars">
-        <span class="first-bar"></span> <span class="second-bar"></span>
-        <span class="third-bar"></span>
+    <div id="slides">
+      <div class="overlay"></div>
+
+      <div class="slides-container">
+        <img src="img/computerhome.jpeg" alt="" />
+        <img src="img/computerwithcode.jpeg" alt="" />
+        <img src="img/typing.jpeg" alt="" />
       </div>
-      <!-- 
-      <a class="about" href="about.html">Amout Me</a>
-      <a class="portfolio" href="portfolio.html">Portfolio</a>
-      <a class="contact" href="contact.html">Contact</a> -->
-    </nav>
-    <main class="content">
+
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">Bijay Rai</p>
+          <p class="sub typed"></p>
+        </div>
+      </div>
+
+      <nav class="slides-navigation">
+        <a href="#" class="next"></a> <a href="#" class="prev"></a>
+      </nav>
+    </div>
+
+    <div id="about" class="section">
       <div class="container">
-        <h1 class="content__heading">I am Bijay rai.... sfdad afadad</h1>
-        <p class="content__details">
-          sajhfa asjdfhajdf ajsdfha fdajfhaj fajfhdsjaf ashfajfh afdajshfjahfja
-          fahdjfhaf dhajfhda da ajfhdajfhas
-        </p>
-        <img class="content__image" src="Bijay.jpg" alt="bijay's image" />
+        <div class="row">
+          <div class="col-md-5">
+            <img class="bijayImage" src="img/Bijay.jpg" />
+          </div>
+          <div class="col-md-7">
+            <h4>My name is Bijay Rai</h4>
+            <p>
+              I am a creative and hard-working web developer that has skills in
+              both the front-end of web applications and back-end. I have a
+              passion for continuous learning, problem solving and can work
+              effectively under pressure.
+            </p>
+            <p>
+              asdjf kadjfa kdjaf d dkjfkald kasjdf ad fkadsjfkd fa kdajf
+              afdasklf afkadj dsajfasd faffdaf asdjf kadjfa kdjaf d dkjfkald
+              kasjdf ad fkadsjfkd fa kdajf afdasklf afkadj dsajfasd faffdaf
+              asdjf kadjfa kdjaf d dkjfkald kasjdf ad fkadsjfkd fa kdajf
+              afdasklf afkadj dsajfasd faffdaf asdjf kadjfa kdjaf d dkjfkald
+              kasjdf ad fkadsjfkd fa kdajf afdasklf afkadj dsajfasd faffdaf
+              asdjf kadjfa kdjaf d dkjfkald kasjdf ad fkadsjfkd fa kdajf
+              afdasklf afkadj dsajfasd faffdaf
+            </p>
+          </div>
+        </div>
       </div>
-    </main>
-    <script src="app.js"></script>
+    </div>
+
+    <div id="skills" class="skillsSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>TECHNICAL SKILLS</h1>
+            <div class="skill">
+              <ul>
+                <li><h3>HTML</h3></li>
+                <li><h3>CSS</h3></li>
+                <li><h3>React.js</h3></li>
+                <li><h3>JavaScript</h3></li>
+                <li><h3>Node.js</h3></li>
+                <li><h3>Express.js</h3></li>
+                <li><h3>MongoDB</h3></li>
+                <li><h3>Python</h3></li>
+                <li><h3>Django</h3></li>
+                <li><h3>SQL</h3></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="heading"><h2>PORTFOLIO</h2></div>
+          <div class="pro">
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/BijayRai1/Simon-Says"
+                  class="projectButton"
+                  >Project 1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/BijayRai1/StackOverflow-style-questions-answers"
+                  class="projectButton"
+                  >Project 2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/BijayRai1/project3_roomKind"
+                  class="projectButton"
+                  >Project 3</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <h2>I'd love to hear from you!</h2>
+        <a href="mailTo:raibjraibj@yahoo.com" class="contactButton">
+          GET IN TOUCH!
+        </a>
+      </div>
+    </div>
+
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p>&copy; Copyright Bijay Rai 2019</p>
+      </div>
+    </div>
+
+    <script src="js/jquery.superslides.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
